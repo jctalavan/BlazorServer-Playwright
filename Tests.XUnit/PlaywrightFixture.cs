@@ -153,7 +153,7 @@ namespace Tests.xUnit
                 // Stop tracing and save data into a zip archive.
                 await context.Tracing.StopAsync(new TracingStopOptions()
                 {
-                    Path = "trace.zip"
+                    Path = Path.Combine(Environment.CurrentDirectory, "results", "trace.zip")
                 });
             }
         }

@@ -19,7 +19,7 @@ namespace Tests.xUnit.tests
         [Fact]
         public async Task CounterTest()
         {
-            var url = "https://localhost:7290";
+            var url = Constantes.URL_BLAZOR_SERVER;
 
             // Create the host factory with the App class as parameter and the url we are going to use.
             using var hostFactory = new CustomWebApplicationFactory<Program>();
